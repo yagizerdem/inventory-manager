@@ -1,7 +1,6 @@
 namespace inventory_manager;
 
-static class Program
-{
+static class Program {
     /// <summary>
     ///  The main entry point for the application.
     /// </summary>
