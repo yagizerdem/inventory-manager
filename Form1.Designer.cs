@@ -30,23 +30,27 @@ partial class Form1
     {
         flowLayoutPanel1 = new FlowLayoutPanel();
         flowLayoutPanel2 = new FlowLayoutPanel();
+        hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
+        crownDockPanel1 = new ReaLTaiizor.Docking.Crown.CrownDockPanel();
+        crownLabel1 = new ReaLTaiizor.Controls.CrownLabel();
         airButton1 = new ReaLTaiizor.Controls.AirButton();
         airButton2 = new ReaLTaiizor.Controls.AirButton();
         airButton3 = new ReaLTaiizor.Controls.AirButton();
         airButton4 = new ReaLTaiizor.Controls.AirButton();
         airButton5 = new ReaLTaiizor.Controls.AirButton();
         airButton6 = new ReaLTaiizor.Controls.AirButton();
-        flowLayoutPanel3 = new FlowLayoutPanel();
-        hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
-        crownDockPanel1 = new ReaLTaiizor.Docking.Crown.CrownDockPanel();
-        crownLabel1 = new ReaLTaiizor.Controls.CrownLabel();
+        leftBarBottomPanel = new Panel();
+        panel2 = new Panel();
         flowLayoutPanel1.SuspendLayout();
         flowLayoutPanel2.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)hopePictureBox1).BeginInit();
+        panel2.SuspendLayout();
         SuspendLayout();
         // 
         // flowLayoutPanel1
         // 
+        flowLayoutPanel1.AutoScroll = true;
+        flowLayoutPanel1.AutoSize = true;
         flowLayoutPanel1.Controls.Add(flowLayoutPanel2);
         flowLayoutPanel1.Controls.Add(airButton1);
         flowLayoutPanel1.Controls.Add(airButton2);
@@ -54,12 +58,11 @@ partial class Form1
         flowLayoutPanel1.Controls.Add(airButton4);
         flowLayoutPanel1.Controls.Add(airButton5);
         flowLayoutPanel1.Controls.Add(airButton6);
-        flowLayoutPanel1.Controls.Add(flowLayoutPanel3);
-        flowLayoutPanel1.Dock = DockStyle.Left;
+        flowLayoutPanel1.Dock = DockStyle.Fill;
         flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
         flowLayoutPanel1.Location = new Point(0, 0);
         flowLayoutPanel1.Name = "flowLayoutPanel1";
-        flowLayoutPanel1.Size = new Size(200, 495);
+        flowLayoutPanel1.Size = new Size(203, 443);
         flowLayoutPanel1.TabIndex = 1;
         // 
         // flowLayoutPanel2
@@ -67,11 +70,40 @@ partial class Form1
         flowLayoutPanel2.Controls.Add(hopePictureBox1);
         flowLayoutPanel2.Controls.Add(crownDockPanel1);
         flowLayoutPanel2.Controls.Add(crownLabel1);
-        flowLayoutPanel2.Dock = DockStyle.Top;
         flowLayoutPanel2.Location = new Point(3, 3);
         flowLayoutPanel2.Name = "flowLayoutPanel2";
         flowLayoutPanel2.Size = new Size(197, 70);
         flowLayoutPanel2.TabIndex = 9;
+        // 
+        // hopePictureBox1
+        // 
+        hopePictureBox1.BackColor = Color.FromArgb(192, 196, 204);
+        hopePictureBox1.Location = new Point(3, 3);
+        hopePictureBox1.Name = "hopePictureBox1";
+        hopePictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+        hopePictureBox1.Size = new Size(60, 48);
+        hopePictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+        hopePictureBox1.TabIndex = 0;
+        hopePictureBox1.TabStop = false;
+        hopePictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+        // 
+        // crownDockPanel1
+        // 
+        crownDockPanel1.BackColor = Color.FromArgb(60, 63, 65);
+        crownDockPanel1.Location = new Point(69, 3);
+        crownDockPanel1.Name = "crownDockPanel1";
+        crownDockPanel1.Size = new Size(14, 48);
+        crownDockPanel1.TabIndex = 1;
+        // 
+        // crownLabel1
+        // 
+        crownLabel1.BackColor = SystemColors.ControlDark;
+        crownLabel1.ForeColor = Color.FromArgb(220, 220, 220);
+        crownLabel1.Location = new Point(89, 0);
+        crownLabel1.Name = "crownLabel1";
+        crownLabel1.Size = new Size(95, 27);
+        crownLabel1.TabIndex = 2;
+        crownLabel1.Text = "crownLabel1";
         // 
         // airButton1
         // 
@@ -152,55 +184,41 @@ partial class Form1
         airButton6.Text = "Settings";
         airButton6.Transparent = false;
         // 
-        // flowLayoutPanel3
+        // leftBarBottomPanel
         // 
-        flowLayoutPanel3.Dock = DockStyle.Bottom;
-        flowLayoutPanel3.Location = new Point(3, 367);
-        flowLayoutPanel3.Name = "flowLayoutPanel3";
-        flowLayoutPanel3.Size = new Size(197, 121);
-        flowLayoutPanel3.TabIndex = 0;
+        leftBarBottomPanel.BackColor = SystemColors.Info;
+        leftBarBottomPanel.Dock = DockStyle.Bottom;
+        leftBarBottomPanel.Location = new Point(0, 443);
+        leftBarBottomPanel.Margin = new Padding(0);
+        leftBarBottomPanel.Name = "leftBarBottomPanel";
+        leftBarBottomPanel.Size = new Size(203, 118);
+        leftBarBottomPanel.TabIndex = 10;
         // 
-        // hopePictureBox1
+        // panel2
         // 
-        hopePictureBox1.BackColor = Color.FromArgb(192, 196, 204);
-        hopePictureBox1.Location = new Point(3, 3);
-        hopePictureBox1.Name = "hopePictureBox1";
-        hopePictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-        hopePictureBox1.Size = new Size(60, 48);
-        hopePictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-        hopePictureBox1.TabIndex = 0;
-        hopePictureBox1.TabStop = false;
-        hopePictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-        // 
-        // crownDockPanel1
-        // 
-        crownDockPanel1.BackColor = Color.FromArgb(60, 63, 65);
-        crownDockPanel1.Location = new Point(69, 3);
-        crownDockPanel1.Name = "crownDockPanel1";
-        crownDockPanel1.Size = new Size(14, 48);
-        crownDockPanel1.TabIndex = 1;
-        // 
-        // crownLabel1
-        // 
-        crownLabel1.BackColor = SystemColors.ControlDark;
-        crownLabel1.ForeColor = Color.FromArgb(220, 220, 220);
-        crownLabel1.Location = new Point(89, 0);
-        crownLabel1.Name = "crownLabel1";
-        crownLabel1.Size = new Size(95, 27);
-        crownLabel1.TabIndex = 2;
-        crownLabel1.Text = "crownLabel1";
+        panel2.Controls.Add(flowLayoutPanel1);
+        panel2.Controls.Add(leftBarBottomPanel);
+        panel2.Dock = DockStyle.Left;
+        panel2.Location = new Point(0, 0);
+        panel2.Name = "panel2";
+        panel2.Size = new Size(203, 561);
+        panel2.TabIndex = 2;
         // 
         // Form1
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(853, 495);
-        Controls.Add(flowLayoutPanel1);
+        ClientSize = new Size(853, 561);
+        Controls.Add(panel2);
+        MaximumSize = new Size(1200, 1000);
+        MinimumSize = new Size(800, 600);
         Name = "Form1";
         Text = "Form1";
         flowLayoutPanel1.ResumeLayout(false);
         flowLayoutPanel2.ResumeLayout(false);
         ((System.ComponentModel.ISupportInitialize)hopePictureBox1).EndInit();
+        panel2.ResumeLayout(false);
+        panel2.PerformLayout();
         ResumeLayout(false);
     }
 
@@ -213,8 +231,9 @@ partial class Form1
     private ReaLTaiizor.Controls.AirButton airButton5;
     private ReaLTaiizor.Controls.AirButton airButton6;
     private FlowLayoutPanel flowLayoutPanel2;
-    private FlowLayoutPanel flowLayoutPanel3;
     private ReaLTaiizor.Controls.HopePictureBox hopePictureBox1;
     private ReaLTaiizor.Docking.Crown.CrownDockPanel crownDockPanel1;
     private ReaLTaiizor.Controls.CrownLabel crownLabel1;
+    private Panel leftBarBottomPanel;
+    private Panel panel2;
 }
